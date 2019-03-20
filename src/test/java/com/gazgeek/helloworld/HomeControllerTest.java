@@ -24,12 +24,12 @@ public class HomeControllerTest {
 
     private RestTemplate restTemplate = new TestRestTemplate();
 
-   # @Test
-   # public void helloWorld() {
-   #     getRequest("/")
-   #         .assertStatusCode(OK)
-   #         .assertResponseBody("Hello from Kaptanoglu!");
-   # }
+    @Test
+    public void helloWorld() {
+        getRequest("/")
+            .assertStatusCode(OK);
+    #        .assertResponseBody("Hello from Kaptanoglu!");
+    }
 
     private HelloWorldResponse getRequest(String uri) {
         return new HelloWorldResponse(restTemplate.getForEntity(getUri(uri), String.class));
