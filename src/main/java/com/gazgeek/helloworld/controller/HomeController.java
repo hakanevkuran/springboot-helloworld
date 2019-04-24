@@ -8,7 +8,7 @@ public class HomeController {
 
     @RequestMapping("/")
     String home() {
-        return "TURK TELEKOM V1";
+        return "TURK TELEKOM V2";
     }
 
 }
